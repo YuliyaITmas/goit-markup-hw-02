@@ -52,7 +52,7 @@ body {
   list-style: none;
 }
 .contacts-link {
-  color: var(--primary-text-color);
+  color: inherit;
   text-decoration: none;
 }
 .contacts-link:hover,
@@ -63,7 +63,7 @@ body {
 .footer {
   background-color: var(--footer-bcg-color);
 }
-.footer>.logo {
+.footer > .logo {
   color: var(--white-color);
 }
 .address {
@@ -98,6 +98,7 @@ body {
 .hero-button {
   background-color: var(--accent-color);
   color: var(--white-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -105,7 +106,8 @@ body {
   text-align: center;
   cursor: pointer;
 }
-.hero-button:active {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--active-button-color);
 }
 
@@ -164,4 +166,41 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+/* сторінка портфоліо */
+.portfolio-list {
+  list-style: none;
+}
+.portfolio-button {
+  background-color: var(--section-team-bcg-color);
+  color: var(--primary-title-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button:focus .portfolio-button.current {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.project-list {
+  list-style: none;
+}
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+.project-title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-link > .text {
+  font-size: 16px;
+  line-height: 1.88;
 }
